@@ -18,13 +18,13 @@ export default function Navbar() {
         if(mode == 'setstart') setmode(null)
         else {setmode('setstart')}
        }}>
-        <i className="bi bi-geo-alt"></i>
+        <i className="bi bi-house-door-fill" style={{ color: 'white' }} ></i>
        </button>
        <button type="button" className={['btn' ,'btn-primary', mode=='settarget'? 'selected' : ''].join(' ')} onClick={()=>{
         if(mode == 'settarget') setmode(null)
         else {setmode('settarget')}
        }}>
-       <i className="bi bi-geo"></i>
+       <i className="bi bi-flag-fill" style={{ color: 'white' }} ></i>
        </button>
        <button type="button" className={['btn' ,'btn-primary', mode=='addbricks'? 'selected' : ''].join(' ')} onClick={()=>{
         if(mode == 'addbricks') setmode(null)
@@ -32,12 +32,12 @@ export default function Navbar() {
        }}>
        <i className="bi bi-bricks"></i>
        </button>
-       <button type="button" className={['btn' ,'btn-primary', mode=='addweight'? 'selected' : ''].join(' ')} onClick={()=>{
+       {/* <button type="button" className={['btn' ,'btn-primary', mode=='addweight'? 'selected' : ''].join(' ')} onClick={()=>{
         if(mode == 'addweight') setmode(null)
         else {setmode('addweight')}
        }}>
-       <i className="bi bi-virus"></i>
-       </button>
+       <i className="bi bi-bucket-fill" style={{ fontSize: '0.8rem',color: 'white' }} ></i>
+       </button> */}
        <button type="button" className="btn btn-primary" onClick={()=>{setres((old)=>{ return !old})}}>
        <i className="bi bi-arrow-counterclockwise"></i> 
        </button>

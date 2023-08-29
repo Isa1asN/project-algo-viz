@@ -218,8 +218,9 @@ if (algo == 'DFS'){
          
 
           {cell.weight > 1 ? <i className="bi bi-virus"></i> : null}
-          {cell.isstart ? <i className="bi bi-geo-alt"></i> : null }
-          {cell.istarget ? <i className="bi bi-geo"></i> : null }
+          {cell.isstart ? <i className="bi bi-house-door-fill" style={{ fontSize: '0.8rem',color: 'green' }} ></i> : null }
+          {cell.istarget ? <i className="bi bi-flag-fill" style={{ fontSize: '0.8rem',color: 'red' }}></i>
+                 : null }
           
          </div>
       })}
