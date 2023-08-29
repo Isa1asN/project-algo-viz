@@ -18,13 +18,13 @@ export default function Navbar() {
         if(mode == 'setstart') setmode(null)
         else {setmode('setstart')}
        }}>
-        <p>S</p>
+        <i className="bi bi-geo-alt"></i>
        </button>
        <button type="button" className={['btn' ,'btn-primary', mode=='settarget'? 'selected' : ''].join(' ')} onClick={()=>{
         if(mode == 'settarget') setmode(null)
         else {setmode('settarget')}
        }}>
-       <p>E</p>
+       <i className="bi bi-geo"></i>
        </button>
        <button type="button" className={['btn' ,'btn-primary', mode=='addbricks'? 'selected' : ''].join(' ')} onClick={()=>{
         if(mode == 'addbricks') setmode(null)
