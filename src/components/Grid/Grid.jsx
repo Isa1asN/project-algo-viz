@@ -58,7 +58,7 @@ export default function Grid() {
     return null
   }
 
-  function BDS(graph,hashmap,prevmap,start,target){
+  function DFS(graph,hashmap,prevmap,start,target){
     let queue=[start]
     let count=0
     hashmap[`${start.x}-${start.y}`]=true
@@ -124,7 +124,7 @@ if (algo == 'BFS'){
   
  
 }
-if (algo == 'BDS'){
+if (algo == 'DFS'){
   let hashmap={}
   let prevmap={}
   for (let j=0;j<25;j++){
@@ -133,7 +133,7 @@ if (algo == 'BDS'){
      prevmap[`${i}-${j}`]=null
    }
  }
-  let result=BDS(grid,hashmap,prevmap,start.current,end.current)
+  let result=DFS(grid,hashmap,prevmap,start.current,end.current)
   let path=[]
   if (result !=null){
    let current=result[0]

@@ -50,7 +50,7 @@ export default function Navbar() {
        }}>
        <option value=''>Choose your algorithm</option>
        <option value="dijkstra">dijkstra</option>
-       <option value="BDS">BDS</option>
+       <option value="DFS">DFS</option>
        <option value="BFS">BFS</option>
 </select>
        </div>
