@@ -13,6 +13,7 @@ export default function Navbar() {
 
   return (
     <div className='navbar'>
+        <h3 style={{margin:'0px 0px', alignSelf:'center', color:'white'}}>VisuAlgo</h3>
       <div className='container'>
        <button type="button" className={['btn' ,'btn-primary', mode=='setstart'? 'selected' : ''].join(' ')} onClick={()=>{
         if(mode == 'setstart') setmode(null)
@@ -48,12 +49,12 @@ export default function Navbar() {
        <select className="form-select" aria-label="Default select example"  value={algo} onChange={(e)=>{
         setalgo(e.target.value)
        }}>
-       <option value=''>Choose your algorithm</option>
-       <option value="dijkstra">dijkstra</option>
-       <option value="DFS">DFS</option>
-       <option value="BFS">BFS</option>
-</select>
-       </div>
+          <option value=''>Choose your algorithm</option>
+          <option value="dijkstra">dijkstra</option>
+          <option value="DFS">DFS</option>
+          <option value="BFS">BFS</option>
+      </select>
+    </div>
       </div>
     </div>
   )
