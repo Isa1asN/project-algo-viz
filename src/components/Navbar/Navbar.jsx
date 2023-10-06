@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <div className='navbar'>
-        <h3 style={{margin:'0px 0px', alignSelf:'center', color:'white'}}>VisuAlgo</h3>
+        <h3 style={{margin:'0px 5px', alignSelf:'center', color:'white'}}>VisuAlgo</h3>
       <div className='container'>
        <button type="button" className={['btn' ,'btn-primary', mode=='setstart'? 'selected' : ''].join(' ')} onClick={()=>{
         if(mode == 'setstart') setmode(null)
